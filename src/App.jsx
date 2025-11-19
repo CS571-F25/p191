@@ -1,8 +1,8 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import Navigation from './components/Navigation'
 import Home from './components/Home'
-import ShipCodex from './components/AboutMe'
-import Discussion from './components/Portfolio'
+import ShipCodex from './components/ShipCodex'
+import Discussion from './components/Discussion'
 import Footer from './components/Footer'
 import './App.css'
 
