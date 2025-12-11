@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -6,25 +7,18 @@ export default function Footer() {
             <Container fluid className="px-4">
                 <Row>
                     <Col md={6}>
-                        <h5>Starsector Wiki</h5>
+                        <h5>Starsector Guide</h5>
                         <p className="mb-1">Community-driven Starsector database</p>
                         <p className="mb-1">Explore the Sector</p>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="text-md-end">
                         <h5>Quick Navigation</h5>
                         <div>
-                            <a href="#" className="text-light me-3">Ship Codex</a>
-                            <a href="#" className="text-light me-3">Discussion</a>
-                            <a href="#" className="text-light me-3">Guides</a>
+                            <Link to="/" className="text-light me-3">Home</Link>
+                            <Link to="/ships" className="text-light me-3">Ship Codex</Link>
+                            <Link to="/world" className="text-light me-3">World</Link>
+                            <Link to="/discussion" className="text-light">Discussion</Link>
                         </div>
-                    </Col>
-                </Row>
-                <hr className="my-3" />
-                <Row>
-                    <Col className="text-center">
-                        <p className="mb-0">
-                            &copy; {new Date().getFullYear()} Starsector Wiki. All rights reserved.
-                        </p>
                     </Col>
                 </Row>
             </Container>
